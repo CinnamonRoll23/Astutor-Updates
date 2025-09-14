@@ -315,3 +315,90 @@ h1, h2, h3, h4, h5, h6 {
               box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Find the right tutor section carousel */
+.description {
+  max-width: 1000px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.description-carousel {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: 300%; /* 3 slides */
+  animation: slide 15s infinite ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background: transparent;
+}
+
+.slide img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.text {
+  max-width: 400px;
+  text-align: left;
+}
+
+.text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Auto-slide animation */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(0); }
+  35%  { transform: translateX(-100%); }
+  60%  { transform: translateX(-100%); }
+  70%  { transform: translateX(-200%); }
+  95%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+
+/* Lesson you'll love */
+.lessonsyoulllove-section {
+  background: url('/static/images/lessonlove.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.lessonsyoulllove-section .overlay {
+  background: rgba(0, 0, 0, 0.5); /* makes text readable */
+  padding: 50px 20px;
+}
